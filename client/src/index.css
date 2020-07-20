@@ -31,7 +31,7 @@
 
   font-family: "Modak", cursive;
   font-size: 100px;
-  color: black;
+  color: white;
 }
 
 .header-subtitle {
@@ -46,9 +46,10 @@
 /*-----Home-----*/
 .body {
   /*background-image: url("https://images.unsplash.com/photo-1540678931042-41a977082abf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");*/
+  background-image: url("https://res.cloudinary.com/gray-malin/image/upload/c_scale/gray-malin/blog-uploads/Central-Park-New-York-City-background.jpg-KV1Y1YM");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
-  height: 900px;
+  height: 100%;
   margin-top: -20px;
 }
 
@@ -66,17 +67,20 @@
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
-  float: center;
+  /*float: center;*/
 }
 
 .desc {
   font-family: "Modak", cursive;
   font-size: 50px;
   margin-top: -30px;
+  padding-left: 75px;
+  padding-right: 75px;
+  text-align: center;
 }
 
 .desc p {
-  color: gray;
+  color: black;
 }
 
 /*-----About Me-----*/
