@@ -1,13 +1,355 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*-----NavBar-----*/
+.nav-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  /*opacity: 0.5;*/
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-link {
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+/*-----Header-----*/
+.header {
+  background-image: url("https://images.unsplash.com/photo-1540678931042-41a977082abf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+
+.header-title {
+  margin-top: -8px;
+  width: 100%;
+  text-align: center;
+  /*background-color: black;*/
+  /*background-image: url("https://images.unsplash.com/photo-1540678931042-41a977082abf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");*/
+
+  font-family: "Modak", cursive;
+  font-size: 100px;
+  color: black;
+}
+
+.header-subtitle {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-top: -100px;
+  margin-bottom: 0px;
+  /*background-image: url("https://images.unsplash.com/photo-1540678931042-41a977082abf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");*/
+}
+
+/*-----Home-----*/
+.body {
+  /*background-image: url("https://images.unsplash.com/photo-1540678931042-41a977082abf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");*/
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  height: 900px;
+  margin-top: -20px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.me-img {
+  display: flex;
+  justify-content: left;
+  height: 350px;
+  width: 350px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: center;
+}
+
+.desc {
+  font-family: "Modak", cursive;
+  font-size: 50px;
+  margin-top: -30px;
+}
+
+.desc p {
+  color: gray;
+}
+
+/*-----About Me-----*/
+.about-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1483835724473-d69ca66efb25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+
+.about-left-container {
+  width: 50%;
+  padding-top: 80px;
+  /*background-color: silver;*/
+  background-color: rgba(125, 125, 125, 0.468);
+  margin-top: 0px;
+}
+
+.about-me {
+  /*background-color: silver;*/
+  /*background-color: rgba(125, 125, 125, 0.468);*/
+  font-family: "Rowdies", cursive;
+  font-size: 30px;
+}
+
+.about-desc-container {
+  padding-top: 10px;
+  /*background-color: silver;*/
+  margin-top: -20px;
+  font-family: "Rowdies", cursive;
+  font-size: 20px;
+}
+
+.about-desc-container p {
+  /*background-color: rgba(125, 125, 125, 0.468);*/
+  color: black;
+  /*background-color: silver;*/
+}
+
+.about-right-container {
+  width: 50%;
+  background-color: rgba(125, 125, 125, 0.468);
+}
+
+.about-img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+  width: 60%;
+  padding-top: 120px;
+}
+
+.about-img-footer {
+  height: 250px;
+  width: 250px;
+  padding: 2px;
+}
+
+.about-img-footer:hover {
+  transform: scale(1.5);
+}
+
+.footer {
+  border: 3px solid black;
+  width: 100%;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+}
+
+/*-----Projects And Portfolio-----*/
+.project-container {
+}
+
+.title-container {
+  text-align: center;
+}
+
+.bca-container {
+}
+
+.bca-projects {
+  font-family: "Rowdies", cursive;
+  text-decoration: none;
+}
+
+/*-----Hobbies And Interests-----*/
+.projects-container {
+}
+
+/*-----Work History-----*/
+.work-title-container {
+  margin-top: -67px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.history-container {
+  display: flex;
+  background-color: lightgray;
+  margin-top: -70px;
+  padding-bottom: 50px;
+}
+
+.goals-employers-container {
+}
+
+.goals {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.employers {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.employers-title {
+}
+
+.employers h3 {
+  padding-top: -20px;
+}
+.skills-resume-container {
+}
+
+.skills {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.skills-title {
+}
+
+.resume {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.resume-title {
+}
+
+.resume-img {
+  /*float: left;*/
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+/*-----Contact Me-----*/
+.contact-container {
+  height: 100%;
+  background-image: url("https://i.pinimg.com/originals/1e/ef/c5/1eefc5567dc5c55f67ef6849b9235582.jpg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: -25px;
+}
+
+.contact-title {
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  /*padding-top: 10px;
+  margin-bottom: 500px;*/
+  font-family: "Notable", sans-serif;
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding-bottom: 100px;
+}
+
+.contact-left-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-img {
+  height: 300px;
+  width: 400px;
+  margin-top: 50px;
+}
+
+.contact-right-container {
+  background-color: tomato;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.email {
+  font-family: "Notable", sans-serif;
+}
+
+.email-img {
+  width: 20px;
+  height: 20px;
+}
+
+.github {
+  font-family: "Notable", sans-serif;
+}
+
+.github-img {
+  width: 20px;
+  height: 20px;
+}
+
+.linkedIn {
+  font-family: "Notable", sans-serif;
+}
+
+.linkedIn-img {
+  width: 20px;
+  height: 20px;
+}
+
+/*-----Footer-----*/
+.footer-container {
+  background-color: black;
+  color: white;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-family: "Rowdies", cursive;
+}
+
+.footer-contact-container {
+}
+
+.email {
+  font-family: "Rowdies", cursive;
+}
+
+.email-img {
+  width: 20px;
+  height: 20px;
+}
+
+.github {
+  font-family: "Rowdies", cursive;
+}
+
+.github-img {
+  width: 20px;
+  height: 20px;
+}
+
+.linkedIn {
+  font-family: "Rowdies", cursive;
+}
+
+.linkedIn-img {
+  width: 20px;
+  height: 20px;
 }
